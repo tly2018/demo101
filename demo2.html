@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*样式 哪几个样式 是一组*/
+        /*.a{*/
+            /*width:200px;*/
+            /*height:100px;*/
+        /*}*/
+        /*.b{*/
+            /*border:  solid 1px red;*/
+        /*}*/
+        /*css 布局方式  弹性布局*/
+        .miaosha{
+            width: 1200px;
+            height: 260px;
+            border: solid 1px red;
+            display: flex;
+            overflow: hidden;
+        }
+        .a1{
+            width: 200px;
+            height: 260px;
+            border: solid 1px black;
+        }
+        .s{
+            background-color: black;
+            color: white;
+            font-size: 25px;
+        }
+        .plus{
+            width: 1123px;
+            height: 279px;
+            position: relative;
+            background-image: url("https://img20.360buyimg.com/babel/s1123x279_jfs/t1/87256/24/4651/59558/5de86bf6Ea1147ba7/6483e328819b7ea4.png!cc_1123x279.webp");
+        }
+        .plus_inner{
+            width: 842px;
+            height: 204px;
+            border: solid 1px red;
+            margin-left: 237px;
+            position: absolute;
+            top: 25px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .plus_el{
+            height: 204px;
+            width: 150px;
+            border: solid 1px black;
+        }
+        .channel{
+            width: 1190px;
+            height: 760px;
+            border: solid 1px red;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .channel-top{
+            width: 1190px;
+            height: 380px;
+            border: solid 1px red;
+            display: flex;
+            justify-content: space-between;
+        }
+        .channel-body{
+            width: 1190px;
+            height: 380px;
+            border: solid 1px red;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .channel-inner{
+            width: 290px;
+            height: 180px;
+            border: solid 1px black;
+        }
+        .channel-left{
+            height: 370px;
+            width: 595px;
+            border: solid 1px black;
+            display: flex;
+            justify-content: space-between;
+        }
+        .channel-right{
+            height: 370px;
+            width: 595px;
+            border: solid 1px black;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .channel-inner1{
+            width: 290px;
+            height: 370px;
+            border: solid 1px black;
+        }
+    </style>
+</head><body>
+    <div class="miaosha">
+        <!--background:背景  color 字色        font-size 字的大小
+            font-weight  加粗        text-align 当前框中的内容（行内元素） 水平居中-->
+        <div class="a1" style="background-image: url('img/4a15d8883775742e3efbb850ae14def7.png');
+        color: white;font-size: 35px;font-weight: 900;text-align: center;padding-top: 20px">
+            <a>京东秒杀</a>
+            <div style="height: 90px"></div>
+            <a style="font-size: 20px">14:00点场 倒计时</a>
+            <span class="s">01</span>:<span class="s">12</span>:<span class="s">52</span>
+        </div>
+        <div class="a1" style="text-align: center;padding-top: 30px">
+            <img class="img" src="https://img12.360buyimg.com/mobilecms/s140x140_jfs/t1/92085/1/4940/114349/5de9ebadEb8b42fb9/d28b6fd2e32ca06a.jpg.webp" alt="">
+            <div style="margin-top: 30px">apple iphone</div>
+            <div style="margin:auto;color:white;width: 100px;height: 20px;
+            border-radius: 30px 30px;background-color: red">1499</div>
+        </div>
+        <div class="a1" style="text-align: center;padding-top: 30px">
+            <img class="img" src="https://img12.360buyimg.com/mobilecms/s140x140_jfs/t1/92085/1/4940/114349/5de9ebadEb8b42fb9/d28b6fd2e32ca06a.jpg.webp" alt="">
+            <div style="margin-top: 30px">apple iphone</div>
+            <div style="margin:auto;color:white;width: 100px;height: 20px;border-radius: 30px 30px;background-color: red">1499</div>
+        </div>
+        <div class="a1" style="text-align: center;padding-top: 30px">
+            <img class="img" src="https://img12.360buyimg.com/mobilecms/s140x140_jfs/t1/92085/1/4940/114349/5de9ebadEb8b42fb9/d28b6fd2e32ca06a.jpg.webp" alt="">
+            <div style="margin-top: 30px">apple iphone</div>
+            <div style="margin:auto;color:white;width: 100px;height: 20px;border-radius: 30px 30px;background-color: red">1499</div>
+        </div>
+        <div class="a1" style="text-align: center;padding-top: 30px">
+            <img class="img" src="https://img12.360buyimg.com/mobilecms/s140x140_jfs/t1/92085/1/4940/114349/5de9ebadEb8b42fb9/d28b6fd2e32ca06a.jpg.webp" alt="">
+            <div style="margin-top: 30px">apple iphone</div>
+            <div style="margin:auto;color:white;width: 100px;height: 20px;border-radius: 30px 30px;background-color: red">1499</div>
+        </div>
+    </div>
+    <div class="plus">
+        <div class="plus_inner">
+            <div class="plus_el"></div>
+            <div class="plus_el"></div>
+            <div class="plus_el"></div>
+            <div class="plus_el"></div>
+            <div class="plus_el"></div>
+        </div>
+    </div>
+    <div class="channel">
+        <div class="channel-top">
+            <div class="channel-left">
+                <div class="channel-inner1">
+                </div>
+                <div class="channel-inner1">
+                </div>
+            </div>
+            <div class="channel-right">
+                <div class="channel-inner">
+                </div>
+                <div class="channel-inner">
+                </div>
+                <div class="channel-inner">
+                </div>
+                <div class="channel-inner">
+                </div>
+            </div>
+
+        </div>
+        <div class="channel-body">
+
+            <div class="channel-inner">
+            </div>
+            <div class="channel-inner">
+            </div>
+            <div class="channel-inner">
+            </div>
+            <div class="channel-inner">
+            </div>
+            <div class="channel-inner">
+            </div>
+            <div class="channel-inner">
+            </div>
+            <div class="channel-inner">
+            </div>
+            <div class="channel-inner">
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+<!--css-->
+<!--样式   写在一个地方 （head  style）  重复使用 不要写这么多次-->
+<!--选择器-->
+<!--<div class="a" >123</div>-->
+<!--<div class="b">123</div>-->
+<!--<div>123</div>-->
+<!--<div >123</div>-->
+</body>
+</html>
